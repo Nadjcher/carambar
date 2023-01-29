@@ -55,10 +55,7 @@ public class LoginStepDefinition extends BaseStepDefinition {
         String expectedName = prenom +" "+ nom;
         Assert.assertEquals(expectedName,actualdName);
 	}
-	
 
-    
-    
     //@After 
 	 // public void tearDown() {
 		// BasePage.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
