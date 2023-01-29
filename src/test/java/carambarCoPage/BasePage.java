@@ -98,9 +98,8 @@ public abstract class BasePage {
 	public  void clickLogo() {}
 
 	public  abstract boolean loginBtnDisplay();
+public abstract void clickajoutPanierDir();
+ public abstract String getMessageAjoutPanier();
 
-
-
-	
 		
 	}

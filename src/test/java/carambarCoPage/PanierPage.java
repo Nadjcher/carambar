@@ -123,6 +123,18 @@ public class PanierPage extends BasePage {
 		return false;
 	}
 
+	@Override
+	public void clickajoutPanierDir() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String getMessageAjoutPanier() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	
 	
 	

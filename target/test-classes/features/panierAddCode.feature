@@ -11,8 +11,8 @@ Feature: Buy promotion product with code promotion
     Then User tap on command the first product left and command
     Then User confirm the command
     Then User fill in the buy product and add "<codepromotion>"
-    Then A success message appear 
+    Then A success message appear
 
     Examples: 
-      | email               | password  | codepromotion | prenom | nom | adresse      | codepostal | ville     | pays   | telephone  |
-      | johndoe009@yahoo.com| Admin123* | CADO23        | John   | Doe | 66 rue libre |      13001 | Marseille | France | 0605122244 |
+      | email                | password  | codepromotion | prenom | nom | adresse      | codepostal | ville     | pays   | telephone  |
+      | johndoe019@yahoo.com | Admin123* | BONBON22      | John   | Doe | 66 rue libre |      13001 | Marseille | France | 0605122244 |

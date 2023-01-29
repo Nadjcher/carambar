@@ -88,8 +88,10 @@ public class PanierAddCodeStepDefinition extends BaseStepDefinition {
 	    @Then("^A success message appear$")
 	    public void a_success_message_appear() throws Throwable {
 	    	String MessageActual = new PanierPage(BasePage.driver).MessageAjoutCode();
-	    	Assert.assertFalse(MessageActual.contains("succés"));
+	    	System.out.println(MessageActual);
+	    	Assert.assertTrue(MessageActual.contains("succés"));
 	    }
+
 
 	    
 

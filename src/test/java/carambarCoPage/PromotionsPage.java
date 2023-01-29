@@ -29,8 +29,13 @@ public class PromotionsPage extends BasePage {
 	@FindBy(xpath = "//strong[contains(text(),'Poulain Au Bon Lait & Bio')]")
 	WebElement NomPrdctAjoute;
 	
+	@FindBy( xpath = "//body/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[3]/div[1]/a[1]/div[1]/div[3]/form[1]/button[1]/*[2]")
+	WebElement ajoutPanierDir;
 	
-
+	@FindBy(xpath = " //div[contains(text(),'Produit ajouté avec succès !')]")
+	WebElement messageAjoutPanier;
+	
+	
 	public void clicklinkProdctPromo() {
 		linkProductPromotionPage.click();
 	}
@@ -38,7 +43,17 @@ public class PromotionsPage extends BasePage {
 	public void clickajoutPanier() {
 		ajoutPanier.click();
 	}
+	public void clickajoutPanierDir() {
+		ajoutPanierDir.click();
+	}
 	
+	public String getMessageAjoutPanier() {
+		String newWindowHandle = driver.getWindowHandle();
+		driver.switchTo().window(newWindowHandle);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		String messageAjtPanier = messageAjoutPanier.getText();
+		return messageAjtPanier;
+	}
 	public void CommandeBtn(WebDriver driver) {
 		String newWindowHandle = driver.getWindowHandle();
 		driver.switchTo().window(newWindowHandle);
